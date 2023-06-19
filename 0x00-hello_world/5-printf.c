@@ -4,7 +4,7 @@
  * main - Entry point
  *
  * Description: A C program that point with printf function.
- * 
+ *
  * Return: always 0 (success)
 */
 
