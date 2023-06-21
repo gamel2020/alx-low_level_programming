@@ -8,8 +8,8 @@
  */
 int main(void)
 {
-	char str[] = "_putchar";
-	int len = sizeof(str) / sizeof(str[0]);
+	char str[] = "_putchar\n";
+	int len = sizeof(str) / sizeof(str[0]) - 1;  // exclude the null terminator;
 	int i;
 
 	for (i = 0; i < len; i++)
