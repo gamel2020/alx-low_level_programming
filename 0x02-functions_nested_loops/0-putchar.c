@@ -9,7 +9,7 @@
 int main(void)
 {
 	char str[] = "_putchar\n";
-	int len = sizeof(str) / sizeof(str[0]) - 1;  // exclude the null terminator;
+	int len = sizeof(str) / sizeof(str[0]) - 1;
 	int i;
 
 	for (i = 0; i < len; i++)
