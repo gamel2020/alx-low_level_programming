@@ -1,6 +1,5 @@
 #include "main.h"
 #include <unistd.h>
-int _putchar(char c);
 
 /**
  * print_alphabet - utilizes on the _putchar function to print
