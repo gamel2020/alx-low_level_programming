@@ -4,7 +4,7 @@
 /**
  * _insupper - check if c is upper
  *
- * @c; input for alphabet
+ * @c: input for alphabet
  *
  * Return: 1 if its uppercase, 0 if not
 */
