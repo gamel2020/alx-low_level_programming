@@ -6,7 +6,7 @@
  * @n: elements parameter input
  * @a: string parameter input
  *
- * Return: Always 0 (Success)
+ * Return: Nothing
 */
 void print_array(int *a, int n)
 {
@@ -18,10 +18,8 @@ void print_array(int *a, int n)
 	printf("%d", array[i]);
 	if (i != sizeof(array) / sizeof(int) - 1)
        	{
-	printf(", ");
+	printf("%d,array[i] ");
 	}
 	}
 		printf("\n");
-
-	return (0);
 }
