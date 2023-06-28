@@ -1,37 +1,26 @@
 #include "main.h"
-#include <stdio.h>
-#include <string.h>
 
 /**
- * main - Entry point
+ * rev_string - reverses a string
  *
- * Return: Always 0 (Success)
- */
-int main(void)
+ * @s: string parameter input
+ *
+ * Return: Nothing
+*/
+
+void rev_string(char *s)
 {
-    char s[11] = "Holberton!";
-    int i, j;
-    char c;
+	int l, i;
+	char temp;
 
-    j = strlen(s) - 1;
-    for (i = 0; i < j; i++, j--)
-    {
-        c = s[i];
-        s[i] = s[j];
-        s[j] = c;
-    }
+	/*find string length without null char*/
+	for (l = 0; s[l] != '\0'; ++l)
 
-    printf("%s\n", s);
-
-    j = strlen(s) - 1;
-    for (i = 0; i < j; i++, j--)
-    {
-        c = s[i];
-        s[i] = s[j];
-        s[j] = c;
-    }
-
-    printf("%s\n", s);
-
-    return (0);
+	/*swap the string by looping to half the string*/
+	for (i = 0; i < l / 2; i++)
+	{
+		temp = s[i];
+		s[i] = s[l - 1 - i]; /*-1 becouse the array starts from 0*/
+		s[l - 1 -i] = temp;
+	}
 }
