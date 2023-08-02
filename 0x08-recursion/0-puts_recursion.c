@@ -4,7 +4,7 @@
  * _puts_recursion - prins a string, followed by a new line
  * @s: priner to the string
  * Return: void
- */
+*/
 
 void _puts_recursion(char *s)
 {
