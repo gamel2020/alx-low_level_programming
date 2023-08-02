@@ -1,11 +1,14 @@
 #include "main.h"
 
-/*
- * _puts_recursion - prins a string using recursion
- * @s: the string to be printed.
+/**
+ * _puts_recursion - Prints a string using recursion.
+ * @s: The string to be printed.
  *
- * Return: void.
+ * Description: This function recursively prints each character of the string
+ *	until it reaches the null terminator ('\0') character.
+ *	It does not return anything.
  */
+
 
 void _puts_recursion(char *s)
 {
