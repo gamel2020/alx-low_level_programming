@@ -1,11 +1,11 @@
 #include "main.h"
 
-/*
- * _pow_recursion -search a string for any of a set of bytes.
- * @x: base
- * @y: exposant
- * Return: pointer to the byte in a 's' that matches one of the bytes in 'accept'
- * or null if no such byte is found.
+/**
+ * _pow_recursion - Calculates the value of a number raised to a power.
+ * @x: The base number.
+ * @y: The exponent.
+ *
+ * Return: The result of x raised to the power of y.
  */
 
 int _pow_recursion(int x, int y)
