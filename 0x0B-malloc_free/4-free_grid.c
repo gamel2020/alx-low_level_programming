@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * free_grid - free the grid
@@ -11,7 +13,6 @@ void free_grid(int **grid, int height)
 {
 	int i = 0;
 
-	if (width <= 0 || height <= 0 || tab == 0)
 	for (; i < height; i++)
 		free(grid[i]);
 	free(grid);
