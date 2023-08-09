@@ -1,37 +1,27 @@
-#include <stdio.h>
+#include "main.h"
 
-char *_strcat(char *dest, char *src)
+/**
+ * _strcat - function that concatenates
+ * 	tow strings.
+ *@dest: pointer todestnation input
+ *@src: pointer to source input
+ *
+ *Return: pointer to resulting string @dest
+ */
+
+char *_strcat(char *dest, char *src);
 {
-	char *ptr = dest;
+	int c, c2;
 
-	/* Find the end of the destination string */
-	while (*ptr != '\0')
-	{
-	ptr++;
-	}
+	c = 0;
+	/* find the size of dest array */
+	while (dest[c])
+		c++;
 
-	/* Append the source string to the destination string */
-	while (*src != '\0')
-	{
-	*ptr = *src;
-	ptr++;
-	src++;
-	}
+	/* iterate throu each src array value without the null byte */
+	for (c2 = 0; src[c2]; c2++)
+		/*append src[c2] to dest[c] while overwritting the null byte  in dest */
+	       dest[c++] = src[c2];
 
-	/* Add a terminating null byte */
-	*ptr = '\0';
-
-	return (dest);
-}
-
-int main(void)
-{
-	char dest[50] = "Hello, ";
-	char src[] = "world!";
-
-	printf("Before concatenation: %s\n", dest);
-	_strcat(dest, src);
-	printf("After concatenation: %s\n", dest);
-
-	return (0);
+	return (dest);	
 }
