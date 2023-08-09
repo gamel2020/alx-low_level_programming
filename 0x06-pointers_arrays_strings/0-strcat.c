@@ -2,7 +2,7 @@
 
 /**
  * _srtcat - function that cocatenates
- * 	tow strings.
+ *	tow strings.
  *
  * @dest: pointer to destnation input
  * @src: pointer to source input
@@ -20,7 +20,7 @@ char *_strcat(char *dest, char *src)
 		c++;
 
 	/* itrate through each src array value without the null byte */
-	for (c2 = 0; src[c2] ; c2++)
+	for (c2 = 0; src[c2]; c2++)
 		/* append src[c2] to dest[c] while overwritting the null byte in dest */
 		dest[c++] = src[c2];
 	return (dest);
