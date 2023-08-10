@@ -20,7 +20,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	/* comput the lengthof the string */
+	/* compute the length of the strings */
 
 	for (s1_length = 0; s1[s1_length] != '\0'; s1_length++)
 		;
