@@ -1,4 +1,4 @@
-#include "3_clac.h"
+#include "3-clac.h"
 
 /**
  * main - check the code for the school student.
