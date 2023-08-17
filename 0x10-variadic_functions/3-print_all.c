@@ -2,7 +2,7 @@
 
 /**
  * format_char - formats charcter
- * @separator: the string seprator
+ * @separator: the string separator
  * @ap: argument pointer
 */
 void format_char(char *separator, va_list ap)
@@ -12,7 +12,7 @@ void format_char(char *separator, va_list ap)
 
 /**
  * format_int - formats integer
- * @separator: the string seprator
+ * @separator: the string separator
  * @ap: argument pointer
 */
 void format_int(char *separator, va_list ap)
@@ -22,7 +22,7 @@ void format_int(char *separator, va_list ap)
 
 /**
  * format_float - formats float
- * @separator: the string seprator
+ * @separator: the string separator
  * @ap: argument pointer
 */
 void format_float(char *separator, va_list ap)
@@ -32,7 +32,7 @@ void format_float(char *separator, va_list ap)
 
 /**
  * format_string - formats string
- * @separator: the string seprator
+ * @separator: the string separator
  * @ap: argument pointer
 */
 void format_string(char *separator, va_list ap)
