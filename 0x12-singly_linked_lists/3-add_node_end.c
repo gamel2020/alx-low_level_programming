@@ -6,8 +6,8 @@
  * @head: address of pointer to head node
  * @str: str field of node
  *
- * return: On success, a pointer to the newly added node.
- *	On failure, NULL.
+ * Return: On success, a pointer to the newly added node.
+ *         On failure, NULL.
  */
 
 list_t *add_node_end(list_t **head, const char *str)
@@ -16,7 +16,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	list_t *node = *head;
 
 	if (!head || !new_node)
-	return (NULL);
+		return (NULL);
 	if (str)
 	{
 		new_node->str = strdup(str);
