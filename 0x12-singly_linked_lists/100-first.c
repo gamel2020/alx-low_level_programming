@@ -3,7 +3,7 @@
 void _constructor(void) __attribute__((construcrtor));
 
 /**
- * _constructor - execute befor main()
+ * _constructor - executes before main()
  *
  * Return: void
  */
