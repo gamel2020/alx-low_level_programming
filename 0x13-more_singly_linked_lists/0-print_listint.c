@@ -1,13 +1,22 @@
 #include "lists.h"
 
-size_t print_listint(const listint_t *h) {
-	size_t count = 0;  // Initialize a counter for nodes
+/**
+ * print_listint - print s a linked lists
+ * @h: pointer to first node
+ *
+ * return: size of list
+ */
 
-	while (h != NULL) {
-	printf("%d\n", h->n);  // Print the current node's value
-	h = h->next;  // Move to the next node
-	count++;  // Increment the counter
+size_t print_listint(const listint_t *h)
+{
+	size_t d = 0;
+
+	while (h)
+	{
+		printf("%d\n", h->n);
+		h = h->next;
+		d++;
 	}
-
-	return count;  // Return the number of nodes
+	return (d);
 }
+
