@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * get_bit - gets the bit at the index
- * @n: the number to index
- * @index: the bit to get
+ * set_bit - sets the value of a bit at a given index to 1
+ * @n: pointer to the number to modify
+ * @index: the index of the bit to set
  *
- * Return: the bit state (0 or 1) or -1 on error
+ * Return: 1 if successful, -1 on error
  */
 
 int set_bit(unsigned long int *n, unsigned int index)
