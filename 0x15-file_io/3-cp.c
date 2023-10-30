@@ -1,6 +1,6 @@
 #include "main.h"
 
-#define USEGE "usege: cp file_from file_to \n"
+#define USEGE "usege: cp file_from file_to\n"
 #define ERR_NOREAD "Error: can't read from file %s\n"
 #define ERR_NOWRITE " Error: can't write to %s\n"
 #define ERR_NOCLOSE "Error: can't close fd %d\n"
@@ -17,7 +17,7 @@
 int main(int ac, char **av)
 {
 	int from_fd = 0, to_fd = 0;
-	ssize_t b;
+	| ssize_t b;
 	char buf[READ_BUF_SIZE];
 
 	if (ac != 3)
